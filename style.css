@@ -588,6 +588,9 @@ ________________________
     }
 }
 @media screen and (max-width: 870px){
+    #scrollPath, #progressbar{
+        display: none;
+    }
     .lenguaje .bloqT{
         width: 100%;
         margin: 25px 0;
