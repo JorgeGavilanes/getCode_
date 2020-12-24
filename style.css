@@ -16,62 +16,7 @@ body{
 ::-webkit-scrollbar {
     width: 0;
 }
-#scrollPath{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background-color: rgba(255,255,255,0.03);
-    z-index: 99999;
-}
-#progressbar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 3px;
-    background: linear-gradient(to top, #61dafb, #80bd01);
-    animation: animate 5s linear infinite;
-    z-index: 99999;
-}
-@keyframes animate{
-    0%,100%{
-        filter: hue-rotate(0deg);
-    }
-    50%{
-        filter: hue-rotate(360deg);
-    }
-}
-#progressbar:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #61dafb, #80bd01);
-    filter: blur(3px);
-}
-#progressbar:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #61dafb, #80bd01);
-    filter: blur(30px);
-}
 
-.fondo{
-    width: 100%;
-    height: 100%;
-    background-color: #1b2631;
-    background-image: url(src/background_src.svg);
-    background-position: center center;
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
 
 /*----------------------
 ________________________
@@ -358,6 +303,13 @@ ________________________
 Seccion
 ________________________
 ------------------------*/
+.seccion{
+    background-color: #1b2631;
+    background-image: url(src/background_src.svg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
 .contenido{
     width: 100%;
 }
@@ -588,8 +540,11 @@ ________________________
     }
 }
 @media screen and (max-width: 870px){
-    #scrollPath, #progressbar{
-        display: none;
+    .logo a{
+        left: 25px;
+    }
+    .hamburger-menu{
+        right: 25px;
     }
     .lenguaje .bloqT{
         width: 100%;
@@ -608,7 +563,7 @@ ________________________
         margin: 0 auto;
     }
     .lenguaje .bloqI img{
-        width: 500px;
+        width: 100%;
     }
     .container-btn{
         right: 25px;
@@ -620,9 +575,6 @@ ________________________
     }
     .home .caption p{
         font-size: 16px;
-    }
-    .lenguaje .bloqI img{
-        width: 400px;
     }
     .logof{
         width: 95px;
@@ -647,9 +599,6 @@ ________________________
     .home .caption p{
         font-size: 16px;
     }
-    .lenguaje .bloqI img{
-        width: 311px;
-    }
     .title{
         font-size: 28px;
     }
@@ -668,8 +617,11 @@ ________________________
     }
 }
 @media screen and (max-width: 380px){
-    .lenguaje .bloqI img{
-        width: 250px;
+    .logo a{
+        left: 15px;
+    }
+    .hamburger-menu{
+        right: 15px;
     }
     .title{
         font-size: 22px;
@@ -688,21 +640,16 @@ ________________________
 @media screen and (max-width: 320px){
     .logo a{
         font-size: 18px;
-        left: 35px;
     }
     .hamburger-menu{
         width: 25px;
         height: 20px;
-        right: 35px;
     }
     .change .line-1{
         transform: rotateZ(-45deg) translate(-8px, 1px);
     }
     .change .line-3{
         transform: rotateZ(45deg) translate(-8px, -1px);
-    }
-    .lenguaje .bloqI img{
-        width: 220px;
     }
     .logof{
         width: 75px;
@@ -723,9 +670,6 @@ ________________________
 @media screen and (max-width: 272px){
     .home .caption{
         width: 90%;
-    }
-    .lenguaje .bloqI img{
-        width: 150px;
     }
     .redes a, .icon-mas2{
         width: 45px;
