@@ -1,4 +1,3 @@
-#
 # Lenguajes de programación
 ---
 ## Subtítulo
