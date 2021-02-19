@@ -234,7 +234,7 @@ ________________________
 }
 .home .caption a:hover{
     background-color: #1290c3;
-    border: none;
+    border-color: #1290c3;
    }
 .home .slide.active .caption a{
 	opacity:0;
@@ -358,7 +358,7 @@ ________________________
 }
 .callToActionA:hover{
     background-color: #1290c3;
-    border: none;
+    border-color: #1290c3;
 }
 .callToActionA:hover > .fab{
     color: #fff;
